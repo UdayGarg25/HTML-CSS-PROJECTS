@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog Project</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            /* Light background for the entire page */
+        }
+
+        .navigation {
+            background-color: rgb(134, 15, 189);
+            height: 100px;
+            text-align: center;
+        }
+
+        .navigation ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        .blog {
+            /* text-align: center; */
+            font-size: 30px;
+            color: aliceblue;
+            padding-top: 10px;
+        }
+
+        .navigation ul li {
+            padding: 0px 15px;
+            font-size: 25px;
+            color: white;
+            font-weight: bold;
+            padding-top: 12px;
+        }
+
+        .navigation h1 {
+            margin: 0;
+            color: white;
+            font-size: 35px;
+        }
+
+        .box {
+            background-color: white;
+            border-radius: 20px;
+            margin: 20px;
+            padding: 20px;
+            height: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            ;
+        }
+
+        .secBlog {
+            padding-top: 50px;
+        }
+
+        .footer {
+            background-color: rgb(134, 15, 189);
+            /* height: 100px; */
+            border-radius: 3px;
+            padding: 20px 0;
+            bottom: 0;
+            position: fixed;
+            width: 100%;
+        }
+
+        .footer p {
+            text-align: center;
+            color: white;
+            margin: 0;
+        }
+        .box hr {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navigation">
+        <h1 class="blog">My Blog</h1>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+    <main class="box">
+        <div>
+            <h2>Blog Post Title</h2>
+            <p>Content of The First Blog Post....</p>
+            <hr>
+            <h2 class="secBlog">Another Blog Post</h2>
+            <p>Content of the second blog post...</p>
+            <hr>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>© 2023 My Simple Blog</p>
+    </footer>
+</body>
+
+</html>

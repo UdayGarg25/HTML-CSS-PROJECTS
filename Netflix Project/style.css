@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: black;
+}
+
+.main {
+    background-image: url("netfliximage.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: max(1200px, 100vw);
+    height: 70vh;
+    position: relative;
+}
+
+.main .box {
+    height: 70vh;
+    width: 100%;
+    opacity: 0.65;
+    position: absolute;
+    top: 0;
+    background-color: black;
+}
+
+nav {
+    max-width: 60vw;
+    margin: auto;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+nav img {
+    color: red;
+    position: relative;
+    z-index: 10;
+    width: 122px;
+}
+
+nav button {
+    position: relative;
+    z-index: 10;
+}
+
+.hero {
+    height: calc(100% - 70px);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    font-family: "Netflix Sans", "Helvetica Neue", "Segoe UI", Roboto, Ubuntu, sans-serif;
+    gap: 9px;
+}
+
+.hero> :nth-child(1),
+.hero> :nth-child(2) {
+    /* Font family */
+    font-style: normal;
+    /* Font style */
+    font-weight: 900;
+    /* Font weight */
+    color: rgb(255, 255, 255);
+    /* Text color (white) */
+    font-size: 56px;
+    /* Font size */
+    line-height: 70px;
+    /* Line height */
+    text-align: center;
+}
+
+.hero> :nth-child(3) {
+    font-style: normal;
+    /* Font style */
+    font-weight: 500;
+    /* Font weight */
+    color: rgb(255, 255, 255);
+    /* Text color (white) */
+    font-size: 20px;
+    /* Font size */
+    line-height: normal;
+    /* Line height */
+    text-align: center;
+}
+
+.hero> :nth-child(4) {
+    font-style: normal;
+    /* Font style */
+    font-weight: 400;
+    /* Font weight */
+    color: rgb(255, 255, 255);
+    /* Text color (white) */
+    font-size: 16px;
+    /* Font size */
+    line-height: 24px;
+    /* Line height */
+    text-align: center;
+}
+
+.seperation {
+    background-color: rgb(59, 59, 59);
+    height: 7px;
+}
+
+.btn {
+    padding: 3px 8px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+.btn-eng {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: 1px solid rgb(215, 207, 207);
+}
+
+.btn-red {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    font-size: 25px;
+    border-radius: 4px;
+}
+
+.main input {
+    padding: 5px 45px 6px 19px;
+    font-size: 20px;
+    border-radius: 4px;
+    color: white;
+    background-color: rgba(23, 23, 23, 0.7);
+    border: 1px solid green;
+    /* font-weight: 700; */
+}
+
+.btn-red-sn {
+    background-color: red;
+    color: white;
+    transition: ease 0.3s;
+}
+
+.btn-red-sn:hover {
+    background-color: rgb(140, 41, 41);
+}
+
+.nav-buttons button {
+    padding: 7px 25px;
+    border-radius: 4px;
+    font-size: 13px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.row-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    width: 80vw;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.boxx img {
+    padding: 25px 20px;
+    border-radius: 35px;
+    transition: transform 0.3s ease;
+    max-width: 200px;
+    height: auto;
+}
+
+.boxx img:hover {
+    transform: scale(1.1);
+}
+
+.scrool {
+    padding: 20px;
+}
+
+.trend-button h1 {
+    color: white;
+    padding-left: 100px;
+    margin-top: 40px;
+}
+
+/* .boxx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    gap: 30px;
+}
+
+.tbox {
+    background: linear-gradient(to bottom, #1d1d2f, #3e0058);
+    height: 250px;
+    width: 270px;
+    border-radius: 22px;
+    padding: 14px;
+    color: white;
+}
+
+.tbox p {
+    padding-top: 10px;
+    color: rgb(219, 213, 213);
+}
+
+.more-join h2 {
+    padding-left: 100px;
+    padding-top: 44px;
+}
+
+.ques-box {
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    gap: 7px;
+}
+
+.q-box {
+    background-color: rgb(48, 45, 45);
+    font-size: 33px;
+    height: 10px;
+    width: 80vw;
+    padding: 33px;
+    display: flex;
+    align-items: center;
+    color: white;
+    transition: ease 0.3s;
+}
+
+.q-box:hover {
+    background-color: rgb(104, 100, 100);
+}
+
+.faq h2 {
+    padding-left: 100px;
+    padding-bottom: 22px;
+}
+
+.faq {
+    padding-top: 30px;
+}
+
+.email {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.email-box {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.email p {
+    font-size: 20px;
+}
+
+.email-box button {
+    font-size: 37px;
+    color: white;
+    background-color: red;
+}
+
+.email-box input {
+    /* padding: 5px 10px;
+    padding-top: 21px; */
+    padding: 10px;
+    width: 500px;
+    background-color: rgb(30, 30, 53);
+    /* position: relative;
+    z-index: 10; */
+    color: white;
+    font-size: 22px;
+}
+@media (max-width: 750px) {
+    .text-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .hero-buttons {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (max-width: 400px) {
+    .q-box {
+        height: auto;
+        width: auto;
+    }
+}
+@media (max-width: 700px) {
+    .email-box {
+        display: flex;
+        flex-direction: column;
+    }
+    .email-box input {
+        width: auto;
+    }
+}
+@media (max-width: 600px) {
+    .hero .new {
+        font-size: 35px;
+    }
+}

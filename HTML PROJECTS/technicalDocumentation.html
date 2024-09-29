@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f8fb;
+            /* display: flex;
+            flex-direction: column; */
+        }
+
+        .nav {
+            background-color: #35424a;
+            text-align: center;
+            color: white;
+            padding: 5px;
+        }
+
+        main {
+            display: flex;
+        }
+        .box {
+            /* display: inline; */
+            background-color: #2c3e50;
+            width: 20%;
+            height: 100vh;
+            padding: 10px;
+            color: white;
+            /* flex-direction: column; */
+        }
+        .box ul li{
+            list-style: none;
+            padding: 20px 0px;
+            transition: 0.6s ease;
+            /* flex-direction: column; */
+        }
+        .box ul li:hover {
+            background-color: rgb(97, 184, 97);
+            /* display: inline; */
+            cursor: pointer;
+        }
+        .content {
+            /* flex-grow: 1; */
+            padding: 20px;
+            /* flex-direction: column; */
+            width: 75%;
+        }
+        h3 {
+            margin-top: 20px;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+        p {
+            margin-bottom: 20px;
+        }
+
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column; /* Stack the sidebar and content */
+            }
+            .box {
+                width: 100%;
+                height: auto;
+                padding: 10px;
+                text-align: center;
+            }
+
+            .content {
+                width: 100%;
+            }
+
+            h3 {
+                font-size: 1.5rem; /* Adjust heading size for smaller screens */
+            }
+
+            p {
+                font-size: 1rem; /* Adjust paragraph size */
+            }
+        }
+        @media (max-width: 480px) {
+            .box ul li {
+                padding: 10px 0;
+                font-size: 1rem; /* Adjust menu item size */
+            }
+
+            .nav h2 {
+                font-size: 1.5rem;
+            }
+
+            h3 {
+                font-size: 1.2rem; /* Further reduce heading size on very small screens */
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+
+            .box {
+                padding: 5px;
+            }
+
+            .content {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <h2>Technical Documentation</h2>
+    </div>
+
+    <main>
+        <div class="box">
+            <ul>
+                <li>itroduction</li>
+                <li>Syntax</li>
+                <li>Variables</li>
+                <li>Functions</li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h3>Introduction</h3>
+            <p>JavaScript is a high-level, interpreted scripting language...</p>
+            <hr>
+            <h3>Syntax</h3>
+            <p>JavaScript syntax is the set of rules, how JavaScript programs are constructed...</p>
+            <hr>
+            <h3>Variables</h3>
+            <p>In JavaScript, a variable can be declared using 'var', 'let', or 'const'...</p>
+            <hr>
+            <h3>Functions</h3>
+            <p>JavaScript functions are blocks of code designed to perform a particular task...</p>
+        </div>
+    </main>
+</body>
+
+</html>
